@@ -8,13 +8,7 @@ Disallow: /
 User-agent: Bytespider
 Disallow: /
 
-User-agent: CCBot
-Disallow: /
-
 User-agent: ClaudeBot
-Disallow: /
-
-User-agent: Google-Extended
 Disallow: /
 
 User-agent: GPTBot
@@ -22,13 +16,16 @@ Disallow: /
 
 User-agent: meta-externalagent
 Disallow: /
+
+User-agent: Google-Extended
+Allow: /  # ✅ Google AI के लिए अनुमति
 # END Cloudflare Managed Content
 
 # Main Rules
 User-agent: Googlebot
 Allow: /
 Disallow: /private/
-Disallow: /temp/
+Disallow: /wp-admin/
 
 User-agent: *
 Allow: /
